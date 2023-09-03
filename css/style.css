@@ -1,0 +1,84 @@
+
+/* calculator */
+.calc{
+    position:absolute;
+    background-color:#0fd9f4 ;
+    width:300px;
+    height:350px;
+    border-radius: 5px;
+    padding: 0 2px 0 5px;
+    
+  }
+  #disp{
+    display:block;
+    height:52px;
+    background-color:#000;
+    margin:8px;
+  }
+  .calc button{
+    height:54px;
+    width:71px;
+    background-color:#eaf60e;
+    margin : 0px;
+    border-radius: 5px;
+    position: relative;
+  }
+  #ans{
+    width:295px;
+  }
+  #disp{
+    font-size:45px;
+    text-align:right;
+    overflow:auto;
+    background-color:white;
+  }
+/* clock */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 6px solid #333;
+    border-radius: 50%;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+    top: 50%;
+    transform-origin: 100%;
+    transform: translateY(-50%);
+    transition: transform 0.5s cubic-bezier(0.4, 2.1, 0.4, 1);
+}
+
+.hour-hand {
+    transform-origin: 100% 50%;
+    background-color: #333;
+    height: 4px;
+    z-index: 3;
+}
+
+.center-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
